@@ -1,4 +1,4 @@
-(function init(exports, beansNamespace) {
+(function init(exports) {
   'use strict';
   //Revealing module pattern
   exports.factory = (function () {
@@ -52,4 +52,4 @@
       registerBean: _registerBean
     };
   })();
-})(neogenz.beans, carManager.beans);
+})(neogenz.beans);
