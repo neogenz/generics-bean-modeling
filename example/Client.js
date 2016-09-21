@@ -10,19 +10,29 @@
       this.birthDate = null;
       this.address = null;
       this.licensingDate = null;
-      //this.locations = null;
-      //this.comingLocations = null;
-      //this.locationsClosed = null;
+      this.locations = null;
+      this.comingLocations = null;
+      this.locationsClosed = null;
       this._schema = {
         id: new neogenz.beans.AbstractSchema({
           type: neogenz.beans.type.STRING,
           persistingName: '_id'
         }),
-        lastName: new neogenz.beans.AbstractSchema({type: neogenz.beans.type.STRING}),
-        firstName: new neogenz.beans.AbstractSchema({type: neogenz.beans.type.STRING}),
-        birthDate: new neogenz.beans.AbstractSchema({type: neogenz.beans.type.DATE}),
-        address: new neogenz.beans.AbstractSchema({type: neogenz.beans.type.STRING}),
-        licensingDate: new neogenz.beans.AbstractSchema({type: neogenz.beans.type.DATE}),
+        lastName: new neogenz.beans.AbstractSchema({
+          type: neogenz.beans.type.STRING
+        }),
+        firstName: new neogenz.beans.AbstractSchema({
+          type: neogenz.beans.type.STRING
+        }),
+        birthDate: new neogenz.beans.AbstractSchema({
+          type: neogenz.beans.type.DATE
+        }),
+        address: new neogenz.beans.AbstractSchema({
+          type: neogenz.beans.type.STRING
+        }),
+        licensingDate: new neogenz.beans.AbstractSchema({
+          type: neogenz.beans.type.DATE
+        }),
         locations: new neogenz.beans.AbstractSchema({
           type: neogenz.beans.type.ARRAY_OBJECT,
           defaultValue: [],
