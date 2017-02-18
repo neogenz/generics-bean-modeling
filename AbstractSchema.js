@@ -128,7 +128,7 @@
         jsonKey = AbstractSchema.prototype._getJsonKey(currentSchemaMember, json, key);
         currentJsonMember = json[jsonKey];
         _validMandatoryConstraint(
-          schemaContainer[key],
+          currentJsonMember,
           currentSchemaMember.mandatory,
           key
         );
@@ -165,13 +165,13 @@
    * @function _validNullableConstraint
    * @desc Test if the value is undefined and if the mandatory constraint is
    *       present. Throw an Error if she's not respected.
-   * @param {boolean} isPresent Value is present.
+   * @param {boolean} propertyToValidate Property to apply the mandatory constraint.
    * @param {boolean} isMandatory Value is mandatory.
    * @param {string} propertyKeyTested Key of object property tested.
    * @memberOf AbstractSchema closure
    */
-  function _validMandatoryConstraint(isPresent, isMandatory, propertyKeyTested) {
-    if (!isPresent && isMandatory) {
+  function _validMandatoryConstraint(propertyToValidate, isMandatory, propertyKeyTested) {
+    if (_.isUndefined(propertyToValidate) && isMandatory) {
       throw new Error('The property ' + propertyKeyTested +
         ' is mandatory in schema but undefined in json.');
     }

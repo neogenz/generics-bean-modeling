@@ -1,3 +1,7 @@
+var myProjectNamespace = {
+  beans: {}
+};
+
 (function init(exports, factory) {
   'use strict';
 
@@ -66,4 +70,4 @@
 
   exports.Client = Client;
   factory.registerBean('Client', exports.Client);
-})(carManager.beans, neogenz.beans.factory);
+})(myProjectNamespace.beans, neogenz.beans.factory);

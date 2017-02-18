@@ -1,8 +1,5 @@
-var global = window;
-global = {
-  neogenz: {
-    beans: {
-      factory: null
-    }
+window.neogenz = {
+  beans: {
+    factory: null
   }
 };

@@ -31,3 +31,27 @@ var clientDataFromWS = {
 };
 
 console.log(neogenz.beans.factory.getBean('Client', clientDataFromWS));
+
+//Nullable constraint
+clientDataFromWS.lastName = null;
+try {
+  console.log(neogenz.beans.factory.getBean('Client', clientDataFromWS));
+} catch (err) {
+  clientDataFromWS.lastName = 'reset';
+}
+
+//Mandatory constraint
+delete clientDataFromWS.firstName;
+try {
+  console.log(neogenz.beans.factory.getBean('Client', clientDataFromWS));
+} catch (err) {
+  clientDataFromWS.firstName = 'reset';
+}
+
+//Type constraint
+clientDataFromWS.address = 3;
+try {
+  console.log(neogenz.beans.factory.getBean('Client', clientDataFromWS));
+} catch (err) {
+  throw err;
+}

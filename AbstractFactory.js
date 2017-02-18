@@ -8,7 +8,7 @@
 
     /**
      * @name _getBean
-     * Get the bean by type in the closed object and return if he's exist.
+     * Gets the bean by type in the closed object and return him by constructor calling.
      * @param {string} type Bean name.
      * @param {Object} initializationObject Object passed to bean constructor.
      */
