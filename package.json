@@ -1,0 +1,32 @@
+{
+  "name": "generics-js-beans-builder",
+  "version": "1.0.0",
+  "description": "How define and manage the creation ( compliance with constraints defined by you ) of beans Javascript.",
+  "main": "AbstractBean.js",
+  "directories": {
+    "example": "example",
+    "utilities": "utilities",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neogenz/generics-bean-modeling.git"
+  },
+  "keywords": [
+    "beans",
+    "js",
+    "javascript",
+    "object-creation"
+  ],
+  "author": "Maxime De Sogus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neogenz/generics-bean-modeling/issues"
+  },
+  "homepage": "https://github.com/neogenz/generics-bean-modeling#readme",
+  "dependencies":{
+    "underscore": "latest",
+  }
+}
