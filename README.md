@@ -39,6 +39,9 @@ After installation, link script in your HTML page :
 <script src="./generics-js-beans-builder/AbstractSchema.js"></script>
 <script src="./generics-js-beans-builder/AbstractFactory.js"></script>
 <script src="./generics-js-beans-builder/init.js"></script>
+
+<script src="./generics-js-beans-builder/utilities/Utilities.js"></script>
+<script src="./generics-js-beans-builder/utilities/Logger.js"></script>
 ```
 
 ### Describe your model schema
