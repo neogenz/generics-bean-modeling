@@ -5,7 +5,7 @@
   "main": "AbstractBean.js",
   "directories": {
     "example": "example",
-    "utilities": "utilities",
+    "utilities": "utilities"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/neogenz/generics-bean-modeling#readme",
   "dependencies":{
-    "underscore": "latest",
+    "underscore": "latest"
   }
 }
