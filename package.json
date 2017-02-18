@@ -1,6 +1,6 @@
 {
   "name": "generics-js-beans-builder",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "How define and manage the creation ( compliance with constraints defined by you ) of beans Javascript.",
   "main": "AbstractBean.js",
   "directories": {
