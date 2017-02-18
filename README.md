@@ -34,6 +34,7 @@ The quickest way to get started with this lib.
 
 After installation, link script in your HTML page :
 ```html
+<script src="../underscore/undescore-min.js"></script>
 <script src="./generics-js-beans-builder/BaseClass.js"></script>
 <script src="./generics-js-beans-builder/AbstractBean.js"></script>
 <script src="./generics-js-beans-builder/AbstractSchema.js"></script>
